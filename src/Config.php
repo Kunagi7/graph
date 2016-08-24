@@ -60,7 +60,7 @@ class Config extends Singleton
         $dataRootDir = join(DIRECTORY_SEPARATOR, [__DIR__, '..', 'data', '']);
         $htmlRootDir = join(DIRECTORY_SEPARATOR, [__DIR__, '..', 'public']);
         
-        self::$title = 'graph.anime.plus';
+        self::$title = 'graph.local';
         self::$mail = 'hello@anime.plus';
         
         self::$cronInterval = 5;
@@ -113,11 +113,11 @@ class Config extends Singleton
         self::$imageDirectory = $htmlRootDir . DIRECTORY_SEPARATOR . 'image';
         self::$mediaUrl = '/media/';
         self::$imageUrl = '/image/';
-        self::$baseUrl = isset($_SERVER['HTTP_HOST']) ? 'http://' . $_SERVER['HTTP_HOST'] . '/' : 'http://graph.anime.plus/';
+        self::$baseUrl = isset($_SERVER['HTTP_HOST']) ? 'http://' . $_SERVER['HTTP_HOST'] . '/' : 'http://graph.local/';
         self::$googleAnalyticsEnabled = true;
         self::$adminPassword = '';
         self::$maintenanceMessage = null;
-        self::$noticeMessage = '<a href="https://myanimelist.net/clubs.php?cid=67199" target="_blank">JOIN OUR CLUB SENPAI!</a>';
+        self::$noticeMessage = '<a href="https://myanimelist.net/clubs.php?cid=67199" target="_blank">JOIN OUR CLUB SENPAI!</a> | Hosted on Kunagi\'s server!';
         self::$sendReferrer = true;
         self::$enforcedDomain = null;
     }
