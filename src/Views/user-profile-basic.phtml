@@ -26,9 +26,9 @@
 		<div class="right user-pic">
 			<a target="_blank" href="https://myanimelist.net/profile/<?php echo $viewContext->user->name ?>">
 			<?php if (empty($viewContext->user->picture_url)): ?>
-				<img class="profile unavailable" alt="No profile picture" src="<?php echo UrlHelper::absoluteUrl('/media/img/pixel.gif') ?>">
+				<img class="profile unavailable" alt="No profile picture" src="/media/img/pixel.gif">
 			<?php else: ?>
-				<img class="profile" alt="<?php echo $viewContext->user->name ?>&rsquo;s profile picture" src="<?php echo UrlHelper::absoluteUrl('/media/img/pixel.gif') ?>" style="background-image: url('<?php echo $viewContext->user->picture_url ?>')">
+				<img class="profile" alt="<?php echo $viewContext->user->name ?>&rsquo;s profile picture" src="/media/img/pixel.gif" style="background-image: url('<?php echo $viewContext->user->picture_url ?>')">
 			<?php endif ?>
 			</a>
 		</div>
