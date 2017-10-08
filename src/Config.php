@@ -114,7 +114,7 @@ class Config extends Singleton
         self::$mediaUrl = '/media/';
         self::$imageUrl = '/image/';
         self::$baseUrl = isset($_SERVER['HTTP_HOST']) ? 'http://' . $_SERVER['HTTP_HOST'] . '/' : 'http://graph.local/';
-        self::$googleAnalyticsEnabled = true;
+        self::$googleAnalyticsEnabled = false;
         self::$adminPassword = '';
         self::$maintenanceMessage = null;
         self::$noticeMessage = '<a href="https://myanimelist.net/clubs.php?cid=67199" target="_blank">JOIN OUR CLUB SENPAI!</a> | Hosted on Kunagi\'s server!';
